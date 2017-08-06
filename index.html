@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>企业网站</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<script src="js/setHomeSetFav.js" type="text/javascript" charset="gb2312"></script><!--gbk一般是用于繁体中文，gb2312一般用于简体中文，但推荐使用utf-8编码了-->
+	<!--引入myFcous的库文件和样式文件-->
+	<script src="js/myfocus-2.0.1.min.js" type="text/javascript"></script>
+	<script src="js/mf-pattern/mF_YSlider.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="js/mf-pattern/mF_YSlider.css" type="text/css">
+	<script type="text/javascript">
+	myFocus.set({
+		id:"picBox"
+	});
+	</script>
+
+</head>
+<body>
+	<div class="top">
+		<div class="top-content">
+			<ul>
+				<li><a href="">联系我们</a></li>
+				<li><a href="#" onclick="AddFavorite(window.location,document.title)">加入收藏</a></li>
+				<li><a href="" onclick="SetHome(window.location)">设为首页</a></li>
+			</ul>
+		</div>
+	</div><!--top结束-->
+	<div class="wrap">
+		<div class="log">
+			<div class="log-left">
+				<img src="images/xuelelogo.jpg" alt="爱词霸">
+			</div>
+			<div class="log-right">
+				<img src="images/tel.jpg" alt="服务热线">24小时服务热线：<span class="tel" ;">123-456-7890</span>
+			</div>
+		</div><!--log结束-->
+		<div class="nav">
+			<div class="nav-left"></div>
+			<div class="nav-mid">
+				<div class="nav-mid-left">
+					<ul>
+						<li><a href="list.html">首页</a></li>
+						<li><a href="list.html">关于网页</a></li>
+						<li><a href="list.html">新闻动态</a></li>
+						<li><a href="list.html">课程中心</a></li>
+						<li><a href="list.html">在线课程</a></li>
+						<li><a href="list.html">人才招聘</a></li>
+					</ul>
+				</div>
+				<div class="nav-mid-right">
+					<form action="" method="post">
+						<input type="text" class="search-text">
+					</form>
+				</div>
+			</div>
+			<div class="nav-right"></div>
+		</div><!--nav结束-->
+		<div class="ad" id="picBox">
+
+			<div class="loading"><img src="images/loading.gif" alt="图片加载中"></div>
+			<div class="pic">
+				<ul>
+					<li><img src="images/ad2.jpg" alt=""></li>
+					<li><img src="images/ad3.jpg" alt=""></li>
+					<li><img src="images/ad4.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div><!--焦点图结束-->
+		<div class="main">
+			<div class="news">
+				<div class="title" >
+				<h2 class="title-left">新闻中心</h2><span class="title-right"><a href="news.html">more&gt;&gt;</a></span>
+				</div><!--title结束-->
+				<div class="pic-news">
+					<img src="images/yingxiang.jpg" alt="">
+					<h2><a href="">520 晒晒自己的美照！</a></h2>
+					<p>活动时间：5月20日—5月25日<br>
+          					获奖公布时间：5月26日<br><a href="">learn more&gt;&gt;</a></p>
+				</div><!--pic-news结束-->
+				<div class="news-list">
+					<ul>
+					          <li> <span class="date">2014-06-01</span><a href="news.html">【粉丝访谈 用户篇】“有为屌丝”在路上</a></li>
+					          <li><span class="date">2014-06-01</span><a href="news.html">【有奖活动】给父亲的三行书信</a></li>
+					          <li><span class="date">2014-05-30</span><a href="news.html">《程序猿，请晒出你的童年》活动获奖公告</a></li>
+					          <li><span class="date">2014-05-28</span><a href="news.html" title="aa">【讲师访谈】破茧成蝶——美女程序员的蜕变史</a></li>
+					</ul>
+				</div><!--news-list结束-->
+			</div><!--news结束-->
+			<div class="course">
+				<div class="title">
+					<h2 class="title-left">课程中心</h2><span class="title-right"><a href="news.html">more&gt;&gt;</a></span>
+				</div>
+				<div class="course-pic">
+					<img src="images/css.jpg" alt=""><a href="news.html"><h2>CSS圆角进化论</h2></a><p> CSS圆角的实现，经历了三大发展阶段：背景图片方式、CSS2.0+HTML标签模拟、CSS3.0圆角属性）。本案例详细讲解每一种的实现方式，并对实现的优缺点进行对比分析。</p>
+				</div>
+				<div class="course-type">
+					<ul>
+						<li>PHP前端开发</li>
+						<li>前端开发</li>
+						<li>JAVA开发</li>
+						<li>Android开发</li>
+					</ul>
+				</div>
+			</div><!--course结束-->
+			<div class="sidebar">
+				<div class="video">
+					<div class="title"><h2 class="title-left">媒体聚焦</h2></div>
+					<div class="video-content">
+						 <embed src='http://player.youku.com/player.php/sid/XMjY5NTIzOTk0OA==/v.swf' allowFullScreen='true' quality='high' width='228' height='140' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+					</div>
+				</div>
+				<div class="sidebar-ad"><img src="images/ailead.jpg" alt=""></div>
+			</div><!--sidebar结束-->
+		</div>
+	</div><!--wrap结束-->
+	<div class="copyright">
+		<div class="copyright-content">
+			<ul>
+				<li><a href="#">关于</a>
+					<ul>
+						<li>品牌故事</li>
+						<li>联系我们</li>
+						<li>加入我们</li>
+						<li>版权声明</li>
+					</ul>
+				</li>
+				<li><a href="#">课程</a>
+					<ul>
+						<li>PHP</li>
+						<li>前端开发</li>
+						<li>JAVA开发</li>
+						<li>Android开发</li>
+					</ul>
+				</li>
+				<li><a href="#">留言</a>
+					<ul>
+						<li>意见反馈</li>
+						<li>问题留言</li>
+						<li>媒体联络</li>
+						<li>在线客服</li>
+					</ul>
+				</li>
+				<li><a href="#">关注</a>
+					<ul>
+						<li>新郎微博</li>
+						<li>腾讯微博</li>
+						<li>企业微信</li>
+						<li>QQ空间</li>
+					</ul>
+
+				</li>
+				<li><a href="#"><img src="images/weixin.png" alt="">微信关注</a>
+					<ul>
+						<li><img src="images/saoma.jpg" alt="扫描关注微信" width="102" height="102"></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!--copyright-content结束-->
+	</div><!--copyright结束-->
+</body>
+</html>
